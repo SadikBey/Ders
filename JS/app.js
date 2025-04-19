@@ -1,26 +1,39 @@
-let slideIndex = 1;
-showSlides(slideIndex);
+document.getElementById("toggle-theme").addEventListener("click", function() {
+    document.body.classList.toggle("dark-mode");
+});
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+    alert("Mesajınız gönderildi! Teşekkürler.");
+});
+const slides = document.querySelectorAll(".slides img");
+let currentIndex = 0;
+
+function showSlide(index) {
+    slides.forEach((slide, i) => {
+        slide.classList.remove("active");
+        if (i === index) {
+            slide.classList.add("active");
+        }
+    });
 }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
+function nextSlide() {
+    currentIndex = (currentIndex + 1) % slides.length;
+    showSlide(currentIndex);
 }
 
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
+function prevSlide() {
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    showSlide(currentIndex);
 }
+
+setInterval(nextSlide, 3000); // 3 saniyede bir otomatik değişim
+showSlide(currentIndex);
+
+
+
+
+
+
+
