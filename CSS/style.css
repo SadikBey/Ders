@@ -2,10 +2,8 @@ body {
     font-family: Arial, sans-serif;
     padding: 0;
     text-align: left;
-    transition: background 0.5s, color 0.5s;
-    max-width: 1200px; /* Sayfanın maksimum genişliği */
+     /* Sayfanın maksimum genişliği */
     margin: 0 auto; /* Sayfayı ortalar */
-
 }
 
 header {
@@ -32,40 +30,48 @@ nav ul li a {
     font-weight: bold;
 }
 
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    background: white;
-    padding: 10px;
-    border-radius: 5px;
-}
 
-.dropdown:hover .dropdown-menu {
-    display: block;
-}
 
-.products, .contact {
+.grid-container, .contact {
     padding: 50px;
     background-color: #6b4226;
 }
-
-.product {
-    background: white;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 10px;
-}
-
-footer {
-    background-color: #222;
-    color: white;
+.item {
+    text-align: center;
+    background-color: #DAD6B9;
+    border: none;
+    border-radius: 5px;
     padding: 10px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  
 }
 
-.dark-mode {
-    background-color: #222;
-    color: white;
+.item:hover {
+    transform: scale(1.05);
 }
+
+
+.grid-container {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+   
+}
+img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+
 
 .slideshow {
     width: 1200px;
@@ -136,4 +142,46 @@ button.next {
     padding: 20px;
     color: #333;
     
+}
+
+
+footer {
+    display: flex; /* Dört sütunu yan yana göster */
+    background-color: #222; /* Koyu gri arka plan */
+    padding: 20px; /* İç boşluk */
+    border-top: 1px solid #ddd; /* Üst kenar çizgisi */
+    justify-content: space-between; /* Sütunlar arasında eşit boşluk bırak */
+}
+
+footer div {
+    flex: 1; /* Sütunların eşit genişlikte olmasını sağla */
+    margin: 0 10px; /* Sütunlar arasında boşluk */
+}
+
+footer h3 {
+    font-size: 18px; /* Başlık boyutu */
+    color: yellow; /* Başlık rengi */
+}
+
+footer p, footer ul {
+    font-size: 14px; /* Metin boyutu */
+    color: #666; /* Metin rengi */
+}
+
+footer ul {
+    list-style-type: none; /* Liste işaretlerini kaldır */
+    padding: 0; /* İç boşlukları sıfırla */
+}
+
+footer ul li {
+    margin-bottom: 10px; /* Liste öğeleri arasındaki boşluk */
+}
+
+footer ul li a {
+    text-decoration: none; /* Alt çizgiyi kaldır */
+    color: #007bff; /* Bağlantı rengi */
+}
+
+footer ul li a:hover {
+    text-decoration: underline; /* Üzerine gelindiğinde alt çizgi ekle */
 }

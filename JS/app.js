@@ -31,6 +31,10 @@ function prevSlide() {
 setInterval(nextSlide, 3000); // 3 saniyede bir otomatik değişim
 showSlide(currentIndex);
 
+function navigate(url) {
+    window.location.href = url; // Tıklanan butonun belirlenen URL'ye yönlenmesini sağlar
+}
+
 
 
 
