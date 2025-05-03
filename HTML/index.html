@@ -1,160 +1,96 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ÖzÇetinler Kereste Fabrikası</title>
-    <link rel="stylesheet" href="../CSS/style.css">
-    <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-            crossorigin="anonymous"
-        />
-    <script src="../JS/app.js" defer></script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ÖzÇetinler</title>
+<link rel="stylesheet" href="../CSS/style.css">
+<script src="../JS/app.js" defer></script>
 </head>
 <body>
-
-    <header>
-        <a href="tel:+905367059454">
-            <button class="phone-button">+905367059454</button> 
-        </a>
-        <nav>
-            <ul>
-                <img src="../IMAGES/logo.jpg" style="width: 170px; height: 70px;">
-                <li><a href="#">Ana Sayfa</a></li>
-                <li><a href="#">Ürünler </a></li>
-                <li><a href="#">Hakkımızda</a></li>
-                <li><a href="#">İletişim</a></li>
-            </ul>
-        </nav>
-       
-    </header>
-    <!--
-    <section class="slideshow">
-        <button class="prev" onclick="prevSlide()">&#10094;</button>
-        <div class="slides">
-            <img src="../IMAGES/cakma5.jpg" class="w-100" alt="Kereste Fabrikası">
-            <img src="../IMAGES/DSC_0051.jpg" alt="Üretim Süreci">
-            <img src="../IMAGES/DSC_0056.jpg" alt="Ahşap Ürünler">
-        </div>
-        <button class="next" onclick="nextSlide()">&#10095;</button>
-    </section>-->
-    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="../IMAGES/cakma1.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="../IMAGES/cakma2.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="../IMAGES/cakma3.jpg" class="d-block w-100" alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    <header class="second-header">
-        <h2>Hemen Şimdi Arayın!</h2>
-        <a href="tel:+905367059454">
-            <button class="phone-button">Telefonla Ara</button>
-        </a>
-    </header>
-    <section class="grid-container">
-        <h2>Ürünlerimiz</h2>
-        <div class="grid-container">
-            <button class="item" onclick="navigate('https://example.com/cam_lambiri')">
-                <img src="../IMAGES/Kafes.webp" alt="ÇAM LAMBİRİ">
-                <p>Kafes</p>
-            </button>
-            <button class="item" onclick="navigate('https://example.com/lareks_lambiri')">
-                <img src="../IMAGES/cips.jpg" alt="LAREKS LAMBİRİ">
-                <p>Kavak Cipsi</p>
-            </button>
-            <button class="item" onclick="navigate('https://example.com/lareks_lambiri')">
-                <img src="../IMAGES/Kereste.avif" alt="LAREKS LAMBİRİ">
-                <p>Kereste</p>
-            </button>
-            <button class="item" onclick="navigate('https://example.com/lareks_lambiri')">
-                <img src="../IMAGES/palet.webp" alt="LAREKS LAMBİRİ">
-                <p>Palet</p>
-            </button>
-            <button class="item" onclick="navigate('https://example.com/lareks_lambiri')">
-                <img src="../IMAGES/sandık.webp" alt="LAREKS LAMBİRİ">
-                <p>Sandık</p>
-            </button>
-            <button class="item" onclick="navigate('https://example.com/lareks_lambiri')">
-                <img src="../IMAGES/Tomruk.webp" alt="LAREKS LAMBİRİ">
-                <p>Tomruk</p>
-            </button>
-        </div>    
-    </section>
+<header>
+    <img src="../IMAGES/logo.jpg" alt=" Logo" class="header-logo">
+  <nav>
+    <div class="menu-toggle" aria-label="Menu" aria-expanded="false" role="button" tabindex="0">
+    </div>
+    <ul>
+      <li><a href="#hero">Anasayfa</a></li>
+      <li><a href="#products">Ürünler</a></li>
+      <li><a href="#about">Hakkımızda</a></li>
+      <li><a href="#contact">İletişim</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <section class="hero" id="hero" aria-label="Ana görsel">
+    <button id="prevBtn" class="nav-btn" aria-label="Önceki resim" title="Önceki resim">&#10094;</button>
     
-    <section class="contact">
-        <h2>Bizimle İletişime Geçin</h2>
-        <form id="contact-form">
-            <label for="name">Adınız:</label>
-            <input type="text" id="name" required>
-            <label for="message">Mesajınız:</label>
-            <textarea id="message" required></textarea>
-            <button type="submit">Gönder</button>
-        </form>
-    </section>
+    
+    <button id="nextBtn" class="nav-btn" aria-label="Sonraki resim" title="Sonraki resim">&#10095;</button>
+  </section>
 
-    <footer>
-            <div>
-                <h3>İletişim</h3>
-                <p>Email: info@ozcetinler.com</p>
-                <p>Adres: Erdoğdu Mah. – Sakarya / Akyazı</p>
-                <p>Telefon: 0 264 458 64 97  
-                    / 0 264 418 34 56 </p>
-            </div>
-            <div>
-                <h3>Site Haritası</h3>
-                <ul>
-                    <li><a href="#">Hakkımızda</a></li>
-                    <li><a href="#">Ürünler</a></li>
-                    <li><a href="#">İletişim</a></li>
-                </ul>
-            </div>
-            
-            <div>
-                <h3>Çalışma Saatlerimiz</h3>
-                <p>Pazartesi – Cuma: 8.00-18.00</p>
-                <p>Cumartesi: 8.00-13.00</p>
-                <p>Pazar: Kapalı</p>
-            </div>
+  <section class="grid-container">
+
+    <div class="grid-container"id="products">
+        <button class="item" onclick="navigate('https://example.com/cam_lambiri')">
+            <img src="../IMAGES/Kafes.webp" alt="ÇAM LAMBİRİ">
+            <p>Kafes</p>
+        </button>
+        <button class="item" onclick="navigate('https://example.com/lareks_lambiri')">
+            <img src="../IMAGES/cips.jpg" alt="LAREKS LAMBİRİ">
+            <p>Kavak Cipsi</p>
+        </button>
+        <button class="item" onclick="navigate('https://example.com/lareks_lambiri')">
+            <img src="../IMAGES/Kereste.avif" alt="LAREKS LAMBİRİ">
+            <p>Kereste</p>
+        </button>
+        <button class="item" onclick="navigate('https://example.com/lareks_lambiri')">
+            <img src="../IMAGES/palet.webp" alt="LAREKS LAMBİRİ">
+            <p>Palet</p>
+        </button>
+        <button class="item" onclick="navigate('https://example.com/lareks_lambiri')">
+            <img src="../IMAGES/sandık.webp" alt="LAREKS LAMBİRİ">
+            <p>Sandık</p>
+        </button>
+        <button class="item" onclick="navigate('https://example.com/lareks_lambiri')">
+            <img src="../IMAGES/Tomruk.webp" alt="LAREKS LAMBİRİ">
+            <p>Tomruk</p>
+        </button>
+    </div>    
+</section>
 
 
-        <p>&copy; 2025 Kereste Fabrikası | Tüm Hakları Saklıdır</p>
-        
-    </footer>
-    <script
-            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"
-        ></script>
-
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-            crossorigin="anonymous"
-        ></script>
+  <section class="about" id="about">
+    <h2>Hakkımızda</h2>
+    <p>Orman Ürünleri firması olarak, doğadan gelen kaliteli ve doğal ürünleri sizlerle buluşturuyoruz. Sürdürülebilirlik ve doğa dostu üretim prensiplerimizle, güvenilir ve sağlıklı ürünler sunmaya özen gösteriyoruz.</p>
+  </section>
+  <section class="contact" id="contact">
+    <h2>İletişim</h2>
+    <address>
+      <p>Adres: Erdoğdu Mah. Akyazı/Sakarya</p>
+      <p>Telefon: +90 264 458 64 97</p>
+      <p>Fax: +90 264 458 66 78</p>
+      <p>Email: info@ozcetinler.com</p>
+    </address>
+    <form id="contactForm" novalidate>
+      <label for="name">İsim</label>
+      <input type="text" id="name" name="name" required minlength="2" placeholder="İsminizi yazınız" />
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required placeholder="Email adresiniz" />
+      <label for="message">Mesajınız</label>
+      <textarea id="message" name="message" rows="4" required minlength="10" placeholder="Mesajınızı yazınız"></textarea>
+      <button type="submit">Gönder</button>
+    </form>
+  </section>
+</main>
+<footer>
+  &copy; 2024 Orman Ürünleri. Tüm hakları saklıdır.
+  <div class="social" aria-label="Sosyal medya bağlantıları">
+    <a href="#" aria-label="Facebook" title="Facebook" target="_blank" rel="noopener noreferrer">📘</a>
+    <a href="#" aria-label="Twitter" title="Twitter" target="_blank" rel="noopener noreferrer">🐦</a>
+    <a href="#" aria-label="Instagram" title="Instagram" target="_blank" rel="noopener noreferrer">📸</a>
+  </div>
+</footer>
+<button id="backToTop" aria-label="Sayfa başına dön" title="Sayfa başına dön">↑</button>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
