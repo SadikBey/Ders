@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+<script src="../JS/app.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <img src="../IMAGES/logo.jpg" alt=" Logo" class="header-logo">
+        <nav>
+          <div class="menu-toggle" aria-label="Menu" aria-expanded="false" role="button" tabindex="0">
+            <div></div>
+            <div></div>
+            <div></div>
+      
+          </div>
+          <ul>
+            <li><a href="../HTML/index.html">Anasayfa</a></li>
+            <li><a href="../HTML/ürünler.html">Ürünler</a></li>
+            <li><a href="../HTML/Hakkımızda.html">Hakkımızda</a></li>
+            <li><a href="../HTML/Foto_galeri.html">Fabrikamız</a></li>
+            <li><a href="../HTML/ISP15.html">ISP-15</a></li>
+            <li><a href="../HTML/iletişim.html">İletişim</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="table-container" aria-label="Ürünler menüsü">
+        <img src="../IMAGES/urunler.gif" alt="Ürünler Görseli" style="display: block; margin-bottom: 10px; max-width: 100%; border-radius: 8px;">
+        <table>
+          <tr>
+            <td><a href="#">Kafes</a></td>
+          </tr>
+          <tr>
+            <td><a href="#">Kavak Cipsi</a></td>
+          </tr>
+          <tr>
+            <td><a href="#">Kereste</a></td>
+          </tr>
+          <tr>
+            <td><a href="#">Palet</a></td>
+          </tr>
+          <tr>
+            <td><a href="#">Sandık</a></td>
+          </tr>
+          <tr>
+            <td><a href="#">Tomruk</a></td>
+          </tr>
+        </table>
+      </div>
+
+        <section class="contact" id="contact" style="text-align: left; background-color:#f0f5f1; ">
+        <h2>İletişim</h2>
+        <address>
+          <p>Adres: Erdoğdu Mah. Akyazı/Sakarya</p>
+          <p>Telefon: +90 264 458 64 97</p>
+          <p>Fax: +90 264 458 66 78</p>
+          <p>Email: info@ozcetinler.com</p>
+        </address>
+        <form >
+          <label for="name">İsim</label>
+          <input type="text" id="name" name="name" required minlength="2" placeholder="İsminizi yazınız" />
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required placeholder="Email adresiniz" />
+          <label for="message">Mesajınız</label>
+          <textarea id="message" name="message" rows="4" required minlength="10" placeholder="Mesajınızı yazınız"></textarea>
+          <button type="submit">Gönder</button>
+        </form>
+      </section>
+      
+</body>
+</html>
