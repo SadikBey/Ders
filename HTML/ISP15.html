@@ -27,13 +27,37 @@
           </ul>
         </nav>
       </header>
+      <div class="table-container" aria-label="Ürünler menüsü">
+        <img src="../IMAGES/urunler.gif" alt="Ürünler Görseli" style="display: block; margin-bottom: 10px; max-width: 100%; border-radius: 8px;">
+        <table>
+          <tr>
+            <td><a href="#">Kafes</a></td>
+          </tr>
+          <tr>
+            <td><a href="#">Kavak Cipsi</a></td>
+          </tr>
+          <tr>
+            <td><a href="#">Kereste</a></td>
+          </tr>
+          <tr>
+            <td><a href="#">Palet</a></td>
+          </tr>
+          <tr>
+            <td><a href="#">Sandık</a></td>
+          </tr>
+          <tr>
+            <td><a href="#">Tomruk</a></td>
+          </tr>
+        </table>
+      <img src="../IMAGES/ürün vitrini.gif" alt="Ürünler Görseli" style=" display: block; margin-bottom: 10px; max-width: 100%; border-radius: 8px;">
+    </div>
       <img src="../IMAGES/ISP15.jpg" alt="ISPM 15 Image" class="ispm-image" />
-    <h1>ISPM 15 AHŞAP AMBALAJ MALZEMELERİ HAKKINDA 
+    <h3>ISPM 15 AHŞAP AMBALAJ MALZEMELERİ HAKKINDA 
         <br>ULUSLARARASI STANDART
-    ISPM 15 STANDARDI NEDİR?</h1>
+    ISPM 15 STANDARDI NEDİR?</h3>
         <p>Ülkemizin de üyesi bulunduğu IPPC (Uluslararası Bitki Koruma Konvansiyonu) Genel Kurulunun 2002 yılında kabul ettiği,
              uluslararası ticarette ahşap ambalaj malzemeleri kullanımını düzenleyen standarttır.</p>
-             <h1>ISPM 15 STANDARDININ KAPSAMI NEDİR?</h1>
+             <h3>ISPM 15 STANDARDININ KAPSAMI NEDİR?</h3>
              <p>.ISPM 15 standardına göre ihraç edilen ürün ne olursa olsun, her türlü ahşap ambalaj malzemesi
          (kalınlığı 6 mm.den az olanlar hariç olmak üzere, palet, sandık, kasa, takoz vb.) işlemden geçirilmiş 
          (ısıl işlem veya metil bromür fümigasyonu) ve işaretlenmiş olmak zorundadır. Isıl işlem veya metil bromür 
@@ -44,7 +68,7 @@
          İthalatta ise ülkemiz uygulaması 01.01.2005 tarihinde başlamış olup, belirtilen tarihten sonra
           ISPM 15 standardına uygun olmayan ürünlerin Türkiye'ye girişine izin verilmeyecektir. İhracatta ülkelerin
            uygulama tarihlerine herhangi bir müdahale söz konusu olmadığından alıcı ülke şartlarının yerine getirilmesi esastır.</p>
-           <h1>ISPM15 Uygulama Tarihleri</h1>
+           <h3>ISPM15 Uygulama Tarihleri</h3>
            
 
   <div class="table-ISP15" aria-label="ISP-15 uygulama tarihleri tablosu">
@@ -119,17 +143,17 @@
             @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap');
 
            .ispm-image {
-            width: 20%;
-            height: 20%;
+            width: 30%;
+            height: auto; /* Yükseklik otomatik ayarlandı */
             display: block;
             margin: 1rem auto;
             float: left;
 
              }
-             h1 {
+             h3 {
          text-align: center;
            margin-bottom: 2rem;
-          color: #2c3e50;
+          color: red;
           }
    .table-ISP15 {
     max-width: 900px;
@@ -158,9 +182,7 @@
   tbody tr:nth-child(even) {
     background-color: #f4f7fa;
   }
-  tbody tr:hover {
-    background-color: #dbe9f4;
-  }
+  
   tbody td {
     padding: 12px 15px;
     vertical-align: top;

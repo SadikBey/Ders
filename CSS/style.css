@@ -10,36 +10,6 @@
 * {
   box-sizing: border-box;
 }
-.table-container {
-  position: fixed;
-  top:10%;
-  right: 1px;
-  z-index: 1000;
-}
-
-  /*------ Table  -------*/
-table {
-  width: 12%;
-  border-collapse: collapse;
-  background: 00FFFFFF;
-  box-shadow: 0 0 10px rgba(0,0,0,0.15);
-  border-radius: 8px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-td {
-  padding: 10px 80px;
-  border: 1px solid #ccc;
-  text-align: left;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-td:hover {
-  background-color: #ff4081;
-  color: white;
-}
-
-
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -48,6 +18,37 @@ body {
   line-height: 1.6;
   scroll-behavior: smooth;
 }
+
+ /*-------- Tablonun sağ tarafa yerleştirilmesi --------- */
+ .table-container {
+  float: right; /* Sağ tarafa yerleştirmek için */
+  width: 200px; /* Genişliği ayarlayın */
+  margin: 10px; /* Kenar boşluğu ekleyin */
+}
+table {
+  width: 100%; /* Tablonun genişliğini %100 yapın */
+  border-collapse: collapse; /* Kenarları birleştirin */
+}
+td {
+  padding: 8px; /* Hücre içi boşluk */
+  border: 2px solid #ccc; /* Kenar rengi */
+}
+ /* Responsive adjustments */
+ @media (max-width: 600px) {
+  .table-container {
+      float: none; /* Mobilde tabloyu alt alta yerleştir */
+      width: 100%; /* Tablonun genişliğini %100 yapın */
+      margin: 0 auto; /* Ortala */
+  }
+  table {
+      font-size: 0.9rem; /* Font boyutunu küçült */
+      min-width: initial; /* Minimum genişliği kaldır */
+  }
+  tbody td:first-child {
+      width: auto; /* İlk sütun genişliğini otomatik yap */
+  }
+}
+
 header {
   background: var(--green-dark);
   color: white;
@@ -73,7 +74,6 @@ nav {
   position: relative;
 }
 nav ul {
-  background-color: transparent;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -94,7 +94,7 @@ nav a:hover, nav a:focus {
   outline: none;
 }
 .menu-toggle {
- display: none;
+  display: none;
   flex-direction: column;
   cursor: pointer;
   width: 25px;
@@ -128,7 +128,7 @@ main {
   color: white;
   display: flex;
   flex-direction: column;
-  
+  align-items: center;
   justify-content: center;
   text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
   margin-bottom: 30px;
@@ -139,8 +139,6 @@ main {
   /* initial background image */
   background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80');
 }
-
-
 .hero button.cta:hover, .hero button.cta:focus {
   background: var(--green-dark);
   outline: none;
@@ -171,7 +169,7 @@ main {
   right: 10px;
 }
 
-/*--------------ÜRÜNLER-------------*/
+/*------------Ürünler-------------*/
 
 .grid-container, .contact {
   padding: 50px;
@@ -192,11 +190,14 @@ main {
 .item:hover {
   transform: scale(1.05);
 }
+
+
 .grid-container {
   display:grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
   padding: 20px;
+ 
 }
 img {
   width: 100%;
@@ -239,23 +240,19 @@ p {
   opacity: 1;
 }
 
-/*-----------HAKKIMIZDA----------*/
+/*--------------HAKKIMIZDA----------*/
 
 section.about {
   margin-top: 40px;
   background: var(--bg-color);
-  color: white;
+  color: #222;
   padding: 20px;
   border-radius: 8px;
 }
 section.about h2 {
-  color: var(--text-color);
   margin-top: 0;
   user-select: none;
 }
-
-/*-----------İLETİŞİM----------*/
-
 section.contact {
   margin-top: 40px;
   background: white;
@@ -265,6 +262,9 @@ section.contact {
 section.contact h2 {
   user-select: none;
 }
+
+/*--------------İLETİŞİM-------------*/
+
 form {
   max-width: 400px;
   margin-top: 15px;
@@ -345,19 +345,18 @@ footer .social a:hover, footer .social a:focus {
   background: var(--green-light);
   outline: none;
 }
-/* Responsive navigation */
+/*----------- Responsive navigation -------------*/
+
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
-    background: var(--text-color);
-    text-align: center;
+    background: var(--green-dark);
     position: absolute;
     top: var(--header-height);
     right: 0;
     width: 200px;
-    display: none;  
+    display: none;
     border-radius: 0 0 0 8px;
-    
   }
   nav ul.show {
     display: flex;
@@ -365,13 +364,4 @@ footer .social a:hover, footer .social a:focus {
   .menu-toggle {
     display: flex;
   }
- 
 }
-
-
-
-
-
-
-
-

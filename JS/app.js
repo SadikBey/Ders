@@ -69,7 +69,8 @@ form.addEventListener('submit', function(e) {
 
 const hero = document.getElementById('hero');
 const images = [
-  'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80',
+  'https://guncelfiyatlar.co/wp-content/uploads/2021/09/Guncel-Kereste-Fiyatlari.png',
+  'https://drive.google.com/file/d/1Y5Aba3qkklOrBXzL6-q3pJYj0HzNxftk/view?usp=sharing/8.jpg',
   'https://images.unsplash.com/photo-1506773090265-76b1e8c63d0b?auto=format&fit=crop&w=1350&q=80',
   'https://images.unsplash.com/photo-1468071174046-657d9d351a40?auto=format&fit=crop&w=1350&q=80',
   'https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=1350&q=80'
