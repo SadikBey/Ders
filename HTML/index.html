@@ -6,6 +6,7 @@
 <title>Öz Çetinler</title>
 <link rel="stylesheet" href="../CSS/style.css">
 <script src="../JS/app.js" defer></script> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 <body>
 <header>
@@ -21,8 +22,8 @@
       <li><a href="../HTML/index.html">Anasayfa</a></li>
       <li><a href="../HTML/ürünler.html">Ürünler</a></li>
       <li><a href="../HTML/Hakkımızda.html">Hakkımızda</a></li>
-      <li><a href="../HTML/Foto_galeri.html">Fabrikamız</a></li>
-      <li><a href="../HTML/ISP15.html">ISP-15</a></li>
+      <li><a href="../HTML/Fabrikamız.html">Fabrikamız</a></li>
+      <li><a href="../HTML/ISPM15.html">ISP-15</a></li>
       <li><a href="../HTML/iletişim.html">İletişim</a></li>
     </ul>
   </nav>
@@ -30,34 +31,27 @@
 <main>
   <section class="hero" id="hero" aria-label="Ana görsel">
     <button id="prevBtn" class="nav-btn" aria-label="Önceki resim" title="Önceki resim">&#10094;</button>
-    
+    <h3>Doğadan Gelen En 
+      <br>Kaliteli Orman Ürünleri </h3>
     <button id="nextBtn" class="nav-btn" aria-label="Sonraki resim" title="Sonraki resim">&#10095;</button>
   </section>
   <section class="grid-container">
 
     <div class="grid-container"id="products">
-        <button class="item" onclick="navigate('https://example.com/cam_lambiri')">
-            <img src="../IMAGES/Kafes.webp" alt="ÇAM LAMBİRİ">
-            <p>Kafes</p>
-        </button>
+         <button class="item" onclick="navigate('https://example.com/lareks_lambiri')">
+            <img src="../IMAGES/Kereste.avif" alt="LAREKS LAMBİRİ">
+           <p>Kereste</p>
+          </button> 
+          <button class="item" onclick="navigate('https://example.com/lareks_lambiri')">
+            <img src="../IMAGES/palet.webp" alt="LAREKS LAMBİRİ">
+            <p>Palet</p>
+        </button>  
         <button class="item" onclick="navigate('https://example.com/lareks_lambiri')">
-            <img src="../IMAGES/cips.jpg" alt="LAREKS LAMBİRİ">
+            <img src="../IMAGES/kavak cips.jpg" alt="LAREKS LAMBİRİ">
             <p>Kavak Cipsi</p>
         </button>
         <button class="item" onclick="navigate('https://example.com/lareks_lambiri')">
-            <img src="../IMAGES/Kereste.avif" alt="LAREKS LAMBİRİ">
-            <p>Kereste</p>
-        </button>
-        <button class="item" onclick="navigate('https://example.com/lareks_lambiri')">
-            <img src="../IMAGES/palet.webp" alt="LAREKS LAMBİRİ">
-            <p>Palet</p>
-        </button>
-        <button class="item" onclick="navigate('https://example.com/lareks_lambiri')">
-            <img src="../IMAGES/13.jpg" alt="LAREKS LAMBİRİ">
-            <p>Sandık</p>
-        </button>
-        <button class="item" onclick="navigate('https://example.com/lareks_lambiri')">
-            <img src="../IMAGES/tomruk2.jpg" alt="LAREKS LAMBİRİ">
+            <img src="../IMAGES/tomruk-3.jpg" alt="LAREKS LAMBİRİ">
             <p>Tomruk</p>
         </button>
     </div>    
@@ -92,6 +86,9 @@
       <button type="submit">Gönder</button>
     </form>
   </section>
+  <a href="" class="WhatsApp" target="_blank">
+        <i class="fa fa-whatsapp margin_WhatsApp"></i>
+</a>
 </main>
 <footer>
   &copy; 2024 Orman Ürünleri. Tüm hakları saklıdır.
@@ -103,6 +100,42 @@
 </footer>
 <button id="backToTop" aria-label="Sayfa başına dön" title="Sayfa başına dön">↑</button>
 
+<style>
+
+   h3{
+    text-align: left;
+    position: absolute;
+  }
+  .WhatsApp
+{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:100px;
+	right: 32px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+	box-shadow: 0px 0px 10px black;
+    transition: 0.3s;
+}
+
+.WhatsApp:hover
+{
+	background-color:#FFF;
+	color:#25d366;
+	border-radius:50px;
+	box-shadow: 0px 0px 20px black;
+    transition: 0.3s;
+}
+
+.margin_WhatsApp
+{
+	margin-top:16px;
+}
+</style>
 </body>
 </html>
 

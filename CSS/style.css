@@ -19,6 +19,24 @@ body {
   scroll-behavior: smooth;
 }
 
+.alt-banner {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  }
+.alt-banner p {
+      position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 15;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+  }
+
  /*-------- Tablonun sağ tarafa yerleştirilmesi --------- */
  .table-container {
   float: right; /* Sağ tarafa yerleştirmek için */
@@ -201,6 +219,7 @@ main {
 }
 img {
   width: 100%;
+  height: 91%;
   border-radius: 5px;
 }
 

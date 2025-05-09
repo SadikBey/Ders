@@ -69,11 +69,12 @@ form.addEventListener('submit', function(e) {
 
 const hero = document.getElementById('hero');
 const images = [
-  'https://guncelfiyatlar.co/wp-content/uploads/2021/09/Guncel-Kereste-Fiyatlari.png',
-  'https://drive.google.com/file/d/1Y5Aba3qkklOrBXzL6-q3pJYj0HzNxftk/view?usp=sharing/8.jpg',
-  'https://images.unsplash.com/photo-1506773090265-76b1e8c63d0b?auto=format&fit=crop&w=1350&q=80',
-  'https://images.unsplash.com/photo-1468071174046-657d9d351a40?auto=format&fit=crop&w=1350&q=80',
-  'https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=1350&q=80'
+  'https://salkimorman.com.tr/images/07082019072047_salkim-orman.jpg',
+  'https://www.keresteci.com/wp-content/uploads/2019/08/1.png',
+  'https://www.keresteci.com/wp-content/uploads/2019/08/2.png',
+  'https://www.keresteci.com/wp-content/uploads/2019/08/3-1.png',
+  'https://salkimorman.com.tr/images/kereste-bg.jpg',
+  'https://i0.wp.com/www.yolcam.com/wp-content/uploads/2018/06/kereste4-717x717.jpg'
 ];
 let currentIndex = 0;  //hvbjhvhjv
 let intervalId = null;
