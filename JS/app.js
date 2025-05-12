@@ -15,7 +15,6 @@ menuToggle.addEventListener('keydown', e => {
   }
 });
 
-
 function navigate(page) {
   window.location.href = page; // Belirtilen sayfaya yönlendir
 }
@@ -39,6 +38,7 @@ backToTopBtn.addEventListener('keydown', e => {
     backToTopBtn.click();
   }
 });
+  /*-------------------İLTİŞİM FORMU JS -------------------------*/
 
 const form = document.getElementById('contactForm');
 form.addEventListener('submit', function(e) {
@@ -63,9 +63,12 @@ form.addEventListener('submit', function(e) {
     form.message.focus();
     return;
   }
-  alert('Mesajınız başarıyla gönderildi. Teşekkür ederiz!');
-  form.reset();
+  alert("Mesajınız başarıyla gönderildi! Teşekkür ederiz.");
+  this.reset();
 });
+
+
+/*------------------- ANASAYFA Ana görsel resimleri -------------------*/
 
 const hero = document.getElementById('hero');
 const images = [
@@ -76,7 +79,7 @@ const images = [
   'https://salkimorman.com.tr/images/kereste-bg.jpg',
   'https://i0.wp.com/www.yolcam.com/wp-content/uploads/2018/06/kereste4-717x717.jpg'
 ];
-let currentIndex = 0;  //hvbjhvhjv
+let currentIndex = 0;  
 let intervalId = null;
 
 function showImage(index) {
@@ -111,6 +114,27 @@ document.getElementById('prevBtn').addEventListener('click', () => {
 
 showImage(0);
 resetInterval();
+
+/*------------- Ürünler ve Fabrikamız için DROPDOWN JS ------------------*/
+
+  
+  const dropdown = document.querySelector('.dropdown');
+  let hideTimeout;
+
+  // Üzerine gelindiğinde hemen göster
+  dropdown.addEventListener('mouseenter', () => {
+    clearTimeout(hideTimeout);
+    dropdown.classList.add('show');
+  });
+
+  // Üzerinden çıkıldığında 2 saniye sonra kapat
+  dropdown.addEventListener('mouseleave', () => {
+    hideTimeout = setTimeout(() => {
+      dropdown.classList.remove('show');
+    }, 2000);  // 2000 ms = 2 saniye
+  });
+
+
 
 
 

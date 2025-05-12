@@ -3,40 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ÖzÇetinler Hakkımızda</title>
+    <title> Hakkımızda</title>
     <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 <script src="../JS/app.js" defer></script> 
+<!--whatsapp-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+<!-- Font Awesome  çzik sonsuzluk-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 <body>
   <header>
       <img src="../IMAGES/logo.jpg" alt=" Logo" class="header-logo">
       <nav>
         <div class="menu-toggle" aria-label="Menu" aria-expanded="false" role="button" tabindex="0">
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
-        <ul>
-          <li><a href="../HTML/index.html">Anasayfa</a></li>
-          <li><a href="../HTML/ürünler.html">Ürünler</a></li>
-          <li><a href="../HTML/Hakkımızda.html">Hakkımızda</a></li>
-          <li><a href="../HTML/Fabrikamız.html">Fabrikamız</a></li>
-          <li><a href="../HTML/ISPM15.html">ISP-15</a></li>
-          <li><a href="../HTML/iletişim.html">İletişim</a></li>
+       <ul>
+      <li><a href="../HTML/index.html">Anasayfa</a></li>
+      <li class="dropdown">
+        <a href="../HTML/ürünler.html">Ürünlerimiz</a>
+        <ul class="dropdown-menu">
+          <li><a href="../HTML/kereste.html">Kereste</a></li>
+          <li><a href="../HTML/palet.html">Palet</a></li>
+          <li><a href="../HTML/kavakcipsi.html">Kavak Cipsi</a></li>
+          <li><a href="../HTML/tomruk.html">Tomruk</a></li>
         </ul>
+      </li>
+      <li><a href="../HTML/Hakkımızda.html">Hakkımızda</a></li>
+
+      <li class="dropdown">
+        <a href="../HTML/Fabrikamız.html">Fabrikamız</a>
+        <ul class="dropdown-menu">
+          <li><a href="../HTML/Galeri.html">Galeri</a></li>
+          <li><a href="../HTML/Serifikalarımız.html">Sertifikalarımız</a></li>
+        </ul>
+      </li>
+
+      <li><a href="../HTML/ISPM15.html">ISPM-15</a></li>
+      <li><a href="../HTML/iletişim.html">İletişim</a></li>
+    </ul>
       </nav>
     </header>
     <div class="table-container" aria-label="Ürünler menüsü">
       <img src="../IMAGES/urunler.gif" alt="Ürünler Görseli" style="display: block; margin-bottom: 10px; max-width: 100%; border-radius: 8px;">
       <table>
         <tr>
-            <td><a href="#">Kereste</a></td>
+            <td><a href="../HTML/kereste.html">Kereste</a></td>
           </tr>
           <tr>
-            <td><a href="#">Palet</a></td>
+            <td><a href="../HTML/palet.html">Palet</a></td>
           </tr>
           <tr>
-            <td><a href="#">Kavak Cipsi</a></td>
+            <td><a href="../HTML/kavakcipsi.html">Kavak Cipsi</a></td>
           </tr>
           <tr>
-            <td><a href="#">Tomruk</a></td>
+            <td><a href="../HTML/tomruk.html">Tomruk</a></td>
           </tr>
       </table>
       <img src="../IMAGES/ürün vitrini.gif" alt="Ürünler Görseli" style=" display: block; margin-bottom: 10px; max-width: 100%; border-radius: 8px;">
@@ -44,8 +72,14 @@
     <main>
       <div class="container"> 
           <section class="about" id="about">
-            <h2>Hakkımızda</h2>
-            <p>Sakarya Akyazı Erdoğdu Köyünde; Öz Çetinler, 1955 yılında kurulan Sakarya bölgesinin ilk kavak alım satım ve kavak
+            <div>
+            <h3 style="font-size: 2.25rem; font-weight: 600; text-align: center; color: #005b96;">Hakkımızda</h3>
+<div class="section-divider">
+      <div class="line"></div>
+      <div class="section-divider icon"><i class="fas fa-infinity"></i></div>
+      <div class="line"></div>
+      </div>
+            <span style="color: rgb(61, 80, 111); font-family: Lato, sans-serif; font-size: medium; text-align: justify;">Sakarya Akyazı Erdoğdu Köyünde; Öz Çetinler, 1955 yılında kurulan Sakarya bölgesinin ilk kavak alım satım ve kavak
             işleme atölyemiz faaliyete girmiştir. Ufak çaplı yerel imkanlarla çalışan sınırlı bir işletme iken ticari alandaki başarıları
             sayesinde işletmemiz 1996 yılında yeni kuşakla birlikte ÖZ ÇETİNLER Kereste Ambalaj Tic. olarak faliyet göstermeye
             devam etmektedir. İlk günden beri  müşterilerine en kaliteli ürünü en uygun fiyatlarla sunmayı amaç edinen bir firma olmuştur.
@@ -53,25 +87,62 @@
             Yıllık kapasite resmi rakam 14.400 m3  olarak belirlenmiştir. Kavak kereste üretiminde ve işletmesinde faliyet gösteren 
             firmamız istenilen ebatlarda ve boyutlarda ( 5x5 – 7x7 – 8x8-10x10 ) palet yapımında kullanılan kavak, kereste, takoz 
             ve talep edilen her ihtiyaç karşılamaktadır. Bilgisayarlı kurutma sistemiyle ISPM 15 Fügimasyon sistemi ile istenilen
-            derecede kurutma sağlanabilmektedir. 51 yıllık iş tecrübemizle siz değerli müşterilerimize daima hizmet sunmaktan gurur duymaktayız</p>
-            <h2>Vizyonumuz</h2>
-            <p>Şirketimizin vizyonu, müşterilerimize kalite, maliyet ve teslimat performansları bakımından mükemmel hizmet ve rekabet avantajları sağlayarak</p>
-            <p>- Türkiye'nin önde gelen Takoz üreticilerinden biri olmak</p>
-            <p> - Diğer firmalara örnek teşkil eden güçlü bir şirket olmak</p>
-            <p>- Ahşap ürünlerini tüm dünyaya ihraç edebilmek,
-              ve kaliteden ödün vermeden en iyisini en ucuza imal etmektir.</p>
-            <h2>Görevimiz</h2>
-            <p>Öz Çetinler ve Ambalaj San. Tic. LTD. ŞTİ.  Ahşap ürürnler endüstrisinde, yurt içinde
-              lider firmalar arasında olmaya namzettir. Görevimiz, ürünlerimizi ve hizmetlerimizi
-              müşterilerimizin gereksinimlerini karşılamak için sürekli geliştirmektir</p>
-            <h2>Başarı Kriterlerimiz</h2>
-            <p>Biz bir ekibiz, çalışanlarımız gücümüzün kaynağıdır. Onlar bizim düşünce birliğimizi, ünümüzü ve varlığımızı sürdürmemizi sağlar.
+            derecede kurutma sağlanabilmektedir. 51 yıllık iş tecrübemizle siz değerli müşterilerimize daima hizmet sunmaktan gurur duymaktayız</span>
+            </div>
+             <div><h3 style="font-size: 2.25rem; font-weight: 600; text-align: center; color: #005b96;">Vizyonumuz</h3>
+<div class="section-divider">
+      <div class="line"></div>
+      <div class="section-divider icon"><i class="fas fa-infinity"></i></div>
+      <div class="line"></div>
+      </div>
+      <span style="color: rgb(61, 80, 111); font-family: Lato, sans-serif; font-size: medium; text-align: justify;">Şirketimizin vizyonu, müşterilerimize kalite, maliyet ve teslimat performansları bakımından mükemmel hizmet ve rekabet avantajları sağlayarak
+        <br>- Türkiye'nin önde gelen Takoz üreticilerinden biri olmak
+            <br> - Diğer firmalara örnek teşkil eden güçlü bir şirket olmak
+            <br>- Ahşap ürünlerini tüm dünyaya ihraç edebilmek,
+              ve kaliteden ödün vermeden en iyisini en ucuza imal etmektir.
+            <br>Şirketimizin vizyonu, müşterilerimize kalite, maliyet ve teslimat performansları bakımından mükemmel hizmet ve rekabet avantajları sağlayarak
+            <br>- Türkiye'nin önde gelen Takoz üreticilerinden biri olmak
+            <br> - Diğer firmalara örnek teşkil eden güçlü bir şirket olmak
+            <br>- Ahşap ürünlerini tüm dünyaya ihraç edebilmek,
+              ve kaliteden ödün vermeden en iyisini en ucuza imal etmektir.</span></div>
+            <div><h2 style="font-size: 2.25rem; font-weight: 600; text-align: center; color: #005b96;">Görevimiz</h2>
+<div class="section-divider">
+      <div class="line"></div>
+      <div class="section-divider icon"><i class="fas fa-infinity"></i></div>
+      <div class="line"></div>
+      </div>
+            <span style="color: rgb(61, 80, 111); font-family: Lato, sans-serif; font-size: medium; text-align: justify;" >
+            Öz Çetinler ve Ambalaj San. Tic. LTD. ŞTİ.  Ahşap ürürnler endüstrisinde, yurt içinde
+             lider firmalar arasında olmaya namzettir. Görevimiz, ürünlerimizi ve hizmetlerimizi
+              müşterilerimizin gereksinimlerini karşılamak için sürekli geliştirmektir</span>
+              </div>
+              
+           <div><h2 style="font-size: 2.25rem; font-weight: 600; text-align: center; color: #005b96;">Başarı Kriterlerimiz</h2>
+<div class="section-divider">
+      <div class="line"></div>
+      <div class="section-divider icon"><i class="fas fa-infinity"></i></div>
+      <div class="line"></div>
+      </div>
+            <span style="color: rgb(61, 80, 111); font-family: Lato, sans-serif; font-size: medium; text-align: justify;">Biz bir ekibiz, çalışanlarımız gücümüzün kaynağıdır. Onlar bizim düşünce birliğimizi, ünümüzü ve varlığımızı sürdürmemizi sağlar.
               Faaliyetlere katılım bizim  değerlerimizdendir. Kazancı müşteri ihtiyaçlarını karşıladığımızın bir ölçüsü olarak görürüz.
             <br>Kazanç hayatta kalmak ve sürekli gelişmeyi sağlamak için bir araçtır. Ürünlerimiz faaliyetlerimizin doğal sonucudur ve
-              alanımızda müşteriye hizmette en iyi olmalıdır. Ürünlerimize bakışımız, müşterilerimizin bakışı ile aynıdır.</p>
-            <img src="../IMAGES/dedem.png" alt="dedemm">            
+              alanımızda müşteriye hizmette en iyi olmalıdır. Ürünlerimize bakışımız, müşterilerimizin bakışı ile aynıdır.</span>
+            </div>
+              <img src="../IMAGES/dedem.png" alt="dedemm">            
           </section>
       </div>
     </main>   
+    <a href="" class="WhatsApp" target="_blank">
+        <i class="bi-whatsapp"></i>
+</a>
+<button id="backToTop" aria-label="Sayfa başına dön" title="Sayfa başına dön">↑</button>
+<footer>
+  &copy; 2024 Orman Ürünleri. Tüm hakları saklıdır.
+  <div class="social" aria-label="Sosyal medya bağlantıları">
+    <a href="#" aria-label="Facebook" title="Facebook" target="_blank" rel="noopener noreferrer">📘</a>
+    <a href="#" aria-label="Twitter" title="Twitter" target="_blank" rel="noopener noreferrer">🐦</a>
+    <a href="#" aria-label="Instagram" title="Instagram" target="_blank" rel="noopener noreferrer">📸</a>
+  </div>
+</footer>
   </body>
 </html>

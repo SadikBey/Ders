@@ -3,10 +3,18 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Öz Çetinler</title>
+<title>Özçetinler Kereste Ambalaj Tic.</title>
 <link rel="stylesheet" href="../CSS/style.css">
 <script src="../JS/app.js" defer></script> 
+<!--whatsapp-->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+<!-- Font Awesome  çzik sonsuzluk-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
 </head>
 <body>
 <header>
@@ -20,10 +28,26 @@
     </div>
     <ul>
       <li><a href="../HTML/index.html">Anasayfa</a></li>
-      <li><a href="../HTML/ürünler.html">Ürünler</a></li>
+      <li class="dropdown">
+        <a href="../HTML/ürünler.html">Ürünlerimiz</a>
+        <ul class="dropdown-menu">
+          <li><a href="../HTML/kereste.html">Kereste</a></li>
+          <li><a href="../HTML/palet.html">Palet</a></li>
+          <li><a href="../HTML/kavakcipsi.html">Kavak Cipsi</a></li>
+          <li><a href="../HTML/tomruk.html">Tomruk</a></li>
+        </ul>
+      </li>
       <li><a href="../HTML/Hakkımızda.html">Hakkımızda</a></li>
-      <li><a href="../HTML/Fabrikamız.html">Fabrikamız</a></li>
-      <li><a href="../HTML/ISPM15.html">ISP-15</a></li>
+
+      <li class="dropdown">
+        <a href="../HTML/Fabrikamız.html">Fabrikamız</a>
+        <ul class="dropdown-menu">
+          <li><a href="../HTML/Galeri.html">Galeri</a></li>
+          <li><a href="../HTML/Serifikalarımız.html">Sertifikalarımız</a></li>
+        </ul>
+      </li>
+
+      <li><a href="../HTML/ISPM15.html">ISPM-15</a></li>
       <li><a href="../HTML/iletişim.html">İletişim</a></li>
     </ul>
   </nav>
@@ -31,34 +55,51 @@
 <main>
   <section class="hero" id="hero" aria-label="Ana görsel">
     <button id="prevBtn" class="nav-btn" aria-label="Önceki resim" title="Önceki resim">&#10094;</button>
-    <h3>Doğadan Gelen En 
-      <br>Kaliteli Orman Ürünleri </h3>
+    
     <button id="nextBtn" class="nav-btn" aria-label="Sonraki resim" title="Sonraki resim">&#10095;</button>
   </section>
-  <section class="grid-container">
 
-    <div class="grid-container"id="products">
-         <button class="item" onclick="navigate('https://example.com/lareks_lambiri')">
-            <img src="../IMAGES/Kereste.avif" alt="LAREKS LAMBİRİ">
-           <p>Kereste</p>
-          </button> 
-          <button class="item" onclick="navigate('https://example.com/lareks_lambiri')">
-            <img src="../IMAGES/palet.webp" alt="LAREKS LAMBİRİ">
-            <p>Palet</p>
-        </button>  
-        <button class="item" onclick="navigate('https://example.com/lareks_lambiri')">
-            <img src="../IMAGES/kavak cips.jpg" alt="LAREKS LAMBİRİ">
-            <p>Kavak Cipsi</p>
-        </button>
-        <button class="item" onclick="navigate('https://example.com/lareks_lambiri')">
-            <img src="../IMAGES/tomruk-3.jpg" alt="LAREKS LAMBİRİ">
-            <p>Tomruk</p>
-        </button>
-    </div>    
+  <h4 style="font-size: 2.25rem; font-weight: 600; text-align: center; color: #005b96;">Ürünlerimiz</h4>
+     <div class="section-divider">
+  <div class="line"></div>
+  <div class="section-divider icon"><i class="fas fa-infinity"></i></div>
+  <div class="line"></div>
+  </div>
+
+  <section class="grid-container">
+  <div class="grid-container" id="products">
+    
+    <a href="../HTML/kereste.html" class="item">
+      <img src="../IMAGES/Kereste.avif" alt="Kereste">
+      <strong>Kereste</strong>
+    </a>
+
+    <a href="../HTML/palet.html" class="item">
+      <img src="../IMAGES/yapay zeka iç palet.png" alt="Palet">
+      <strong>Palet</strong>
+    </a>
+
+    <a href="../HTML/kavakcipsi.html" class="item">
+      <img src="../IMAGES/yapay zeka kavak cipsi.png" alt="Kavak Cipsi">
+      <strong>Kavak Cipsi</strong>
+    </a>
+
+    <a href="../HTML/tomruk.html" class="item">
+      <img src="../IMAGES/tomruk-3.jpg" alt="Tomruk">
+      <strong>Tomruk</strong>
+    </a>
+
+  </div>
 </section>
+
   <section class="about" id="about">
-    <h2>Hakkımızda</h2>
-    <p>Sakarya Akyazı Erdoğdu Köyünde; Öz Çetinler, 1955 yılında kurulan Sakarya bölgesinin ilk kavak alım satım ve kavak işleme atölyemiz 
+    <h4 style="font-size: 2.25rem; font-weight: 600; text-align: center; color: #005b96;">Hakkımızda</h4>
+     <div class="section-divider">
+  <div class="line"></div>
+  <div class="section-divider icon"><i class="fas fa-infinity"></i></div>
+  <div class="line"></div>
+</div>
+    <span>Sakarya Akyazı Erdoğdu Köyünde; Öz Çetinler, 1955 yılında kurulan Sakarya bölgesinin ilk kavak alım satım ve kavak işleme atölyemiz 
     faaliyete girmiştir. Ufak çaplı yerel imkanlarla çalışan sınırlı bir işletme iken ticari alandaki başarıları sayesinde işletmemiz
     1996 yılında yeni kuşakla birlikte ÖZ ÇETİNLER Kereste Ambalaj Tic. olarak faliyet göstermeye devam etmektedir. 
     İlk günden beri müşterilerine en kaliteli ürünü en uygun fiyatlarla sunmayı amaç edinen bir firma olmuştur. 
@@ -66,29 +107,54 @@
     Yıllık kapasite resmi rakam 14.400 m3 olarak belirlenmiştir. Kavak kereste üretiminde ve işletmesinde faliyet gösteren
     firmamız istenilen ebatlarda ve boyutlarda ( 5x5 – 7x7 – 8x8-10x10 ) palet yapımında kullanılan kavak, kereste, takoz ve talep
     edilen her ihtiyaç karşılamaktadır. Bilgisayarlı kurutma sistemiyle ISPM 15 Fügimasyon sistemi ile istenilen derecede
-     kurutma sağlanabilmektedir. 51 yıllık iş tecrübemizle siz değerli müşterilerimize daima hizmet sunmaktan gurur duymaktayız</p>
+     kurutma sağlanabilmektedir. 51 yıllık iş tecrübemizle siz değerli müşterilerimize daima hizmet sunmaktan gurur duymaktayız</span>
   </section>
-  <section class="contact" id="contact">
-    <h2>İletişim</h2>
-    <address>
-      <p>Adres: Erdoğdu Mah. Akyazı/Sakarya</p>
-      <p>Telefon: +90 264 458 64 97</p>
-      <p>Fax: +90 264 458 66 78</p>
-      <p>Email: info@ozcetinler.com</p>
-    </address>
-    <form id="contactForm" novalidate>
-      <label for="name">İsim</label>
-      <input type="text" id="name" name="name" required minlength="2" placeholder="İsminizi yazınız" />
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" required placeholder="Email adresiniz" />
-      <label for="message">Mesajınız</label>
-      <textarea id="message" name="message" rows="4" required minlength="10" placeholder="Mesajınızı yazınız"></textarea>
+
+ <section class="contact-section">
+    <h4>Sorularınız ve Görüşleriniz için</h4>
+    <h6>Bize Ulaşın</h6>
+    <div class="section-divider">
+  <div class="line"></div>
+  <div class="section-divider icon"><i class="fas fa-infinity"></i></div>
+  <div class="line"></div>
+</div>
+    <span>Merak ettiğiniz tüm konular hakkında iletişime geçebilirsiniz. Teklif almak için sipariş formu sayfamızdan kolaylıkla istediğiniz
+     ürünlere erişerek teklif oluşturabilirsiniz. İlginiz için teşekkür ederiz.</span>
+    <div class="contact-methods">
+      <div class="contact-box">
+        <i class="bi bi-whatsapp"></i>
+        <h3 style="text-align: center;">WhatsApp</h3>
+        <p>+90 536 705 94 54</p>
+        
+      </div>
+      <div class="contact-box">
+       <i class="bi bi-envelope"></i>
+       <h3 style="text-align: center;">E-mail</h3>
+       <p>info@ozcetinler.com</p>
+        
+      </div>
+      <div class="contact-box">
+        <i class="bi bi-telephone"></i>
+        <h3 style="text-align: center;">Mobil</h3>
+
+        <p>+90 536 705 94 54</p>
+        
+      </div>
+    </div>
+
+    <form id="contactForm">
+      <input type="text" placeholder="Adınız Soyadınız" required>
+      <input type="email" placeholder="E-Mail Adresiniz" required>
+      <input type="text" placeholder="Konu Başlığı">
+      <textarea placeholder="Mesaj Bilgileri..." rows="5" required></textarea>
       <button type="submit">Gönder</button>
     </form>
   </section>
+
   <a href="" class="WhatsApp" target="_blank">
-        <i class="fa fa-whatsapp margin_WhatsApp"></i>
+        <i class="bi bi-whatsapp"></i>
 </a>
+<button id="backToTop" aria-label="Sayfa başına dön" title="Sayfa başına dön">↑</button>
 </main>
 <footer>
   &copy; 2024 Orman Ürünleri. Tüm hakları saklıdır.
@@ -98,43 +164,12 @@
     <a href="#" aria-label="Instagram" title="Instagram" target="_blank" rel="noopener noreferrer">📸</a>
   </div>
 </footer>
-<button id="backToTop" aria-label="Sayfa başına dön" title="Sayfa başına dön">↑</button>
-
 <style>
 
    h3{
     text-align: left;
     position: absolute;
   }
-  .WhatsApp
-{
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:100px;
-	right: 32px;
-	background-color:#25d366;
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
-    font-size:30px;
-	box-shadow: 0px 0px 10px black;
-    transition: 0.3s;
-}
-
-.WhatsApp:hover
-{
-	background-color:#FFF;
-	color:#25d366;
-	border-radius:50px;
-	box-shadow: 0px 0px 20px black;
-    transition: 0.3s;
-}
-
-.margin_WhatsApp
-{
-	margin-top:16px;
-}
 </style>
 </body>
 </html>

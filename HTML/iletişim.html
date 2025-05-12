@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>İletişim</title>
     <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <script src="../JS/app.js" defer></script>
-    
+    <!-- Font Awesome  çizik sonsuzluk-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 <body>
 
@@ -19,56 +23,121 @@
             <div></div>
           </div>
           <ul>
-            <li><a href="../HTML/index.html">Anasayfa</a></li>
-            <li><a href="../HTML/ürünler.html">Ürünler</a></li>
-            <li><a href="../HTML/Hakkımızda.html">Hakkımızda</a></li>
-            <li><a href="../HTML/Fabrikamız.html">Fabrikamız</a></li>
-            <li><a href="../HTML/ISPM15.html">ISP-15</a></li>
-            <li><a href="../HTML/iletişim.html">İletişim</a></li>
-          </ul>
+      <li><a href="../HTML/index.html">Anasayfa</a></li>
+      <li class="dropdown">
+        <a href="../HTML/ürünler.html">Ürünlerimiz</a>
+        <ul class="dropdown-menu">
+          <li><a href="../HTML/kereste.html">Kereste</a></li>
+          <li><a href="../HTML/palet.html">Palet</a></li>
+          <li><a href="../HTML/kavakcipsi.html">Kavak Cipsi</a></li>
+          <li><a href="../HTML/tomruk.html">Tomruk</a></li>
+        </ul>
+      </li>
+      <li><a href="../HTML/Hakkımızda.html">Hakkımızda</a></li>
+
+      <li class="dropdown">
+        <a href="../HTML/Fabrikamız.html">Fabrikamız</a>
+        <ul class="dropdown-menu">
+          <li><a href="../HTML/Galeri.html">Galeri</a></li>
+          <li><a href="../HTML/Serifikalarımız.html">Sertifikalarımız</a></li>
+        </ul>
+      </li>
+
+      <li><a href="../HTML/ISPM15.html">ISPM-15</a></li>
+      <li><a href="../HTML/iletişim.html">İletişim</a></li>
+    </ul>
         </nav>
     </header>
-
+<h2 style="font-size: 2.25rem; font-weight: 600; text-align: center; color: #005b96;">İletişim</h2>
+<div class="section-divider">
+      <div class="line"></div>
+      <div class="section-divider icon"><i class="fas fa-infinity"></i></div>
+      <div class="line"></div>
+      </div>
     <div class="table-container" aria-label="Ürünler menüsü">
         <img src="../IMAGES/urunler.gif" alt="Ürünler Görseli" style="display: block; margin-bottom: 10px; max-width: 100%; border-radius: 8px;">
         <table>
           <tr>
-            <td><a href="#">Kereste</a></td>
+            <td><a href="../HTML/kereste.html">Kereste</a></td>
           </tr>
           <tr>
-            <td><a href="#">Palet</a></td>
+            <td><a href="../HTML/palet.html">Palet</a></td>
           </tr>
           <tr>
-            <td><a href="#">Kavak Cipsi</a></td>
+            <td><a href="../HTML/kavakcipsi.html">Kavak Cipsi</a></td>
           </tr>
           <tr>
-            <td><a href="#">Tomruk</a></td>
+            <td><a href="../HTML/tomruk.html">Tomruk</a></td>
           </tr>
         </table>
       <img src="../IMAGES/ürün vitrini.gif" alt="Ürünler Görseli" style=" display: block; margin-bottom: 10px; max-width: 100%; border-radius: 8px;">
     </div>
+    <!------ Harita ------>
+  <div style="flex: 1;">
+    <iframe
+      src="https://yandex.com.tr/harita/-/CHr-nJOY" 
+      width="100%" 
+      height="400" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
 
-    <section class="contact" id="contact" style="text-align: left; background-color:#f0f5f1;">
-        <h2>İletişim</h2>
-        <address>
-          <p>Adres: Erdoğdu Mah. Akyazı/Sakarya</p>
-          <p>Telefon: +90 264 458 64 97</p>
-          <p>Fax: +90 264 458 66 78</p>
-          <p>Email: info@ozcetinler.com</p>
-        </address>
-        <form >
-          <label for="name">İsim</label>
-          <input type="text" id="name" name="name" required minlength="2" placeholder="İsminizi yazınız" />
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required placeholder="Email adresiniz" />
-          <label for="message">Mesajınız</label>
-          <textarea id="message" name="message" rows="4" required minlength="10" placeholder="Mesajınızı yazınız"></textarea>
-          <button type="submit">Gönder</button>
-        </form>
-    </section>
+    <section class="contact-section">
+    <h4>Sorularınız ve Görüşleriniz için</h4>
+    <h6>Bize Ulaşın</h6>
+    <div class="section-divider">
+  <div class="line"></div>
+  <div class="section-divider icon"><i class="fas fa-infinity"></i></div>
+  <div class="line"></div>
+</div>
+    <span>Merak ettiğiniz tüm konular hakkında iletişime geçebilirsiniz. Teklif almak için sipariş formu sayfamızdan kolaylıkla istediğiniz
+     ürünlere erişerek teklif oluşturabilirsiniz. İlginiz için teşekkür ederiz.</span>
+    <div class="contact-methods">
+      <div class="contact-box">
+        <i class="bi bi-whatsapp"></i>
+        <h3 style="text-align: center;">WhatsApp</h3>
+        <p>+90 536 705 94 54</p>
+        
+      </div>
+      <div class="contact-box">
+       <i class="bi bi-envelope"></i>
+       <h3 style="text-align: center;">E-mail</h3>
+       <p>info@ozcetinler.com</p>
+        
+      </div>
+      <div class="contact-box">
+        <i class="bi bi-telephone"></i>
+        <h3 style="text-align: center;">Mobil</h3>
 
-    
+        <p>+90 536 705 94 54</p>
+        
+      </div>
+    </div>
+
+    <form id="contactForm">
+      <input type="text" placeholder="Adınız Soyadınız" required>
+      <input type="email" placeholder="E-Mail Adresiniz" required>
+      <input type="text" placeholder="Konu Başlığı">
+      <textarea placeholder="Mesaj Bilgileri..." rows="5" required></textarea>
+      <button type="submit">Gönder</button>
+    </form>
+  </section>
+<a href="" class="WhatsApp" target="_blank">
+        <i class="bi-whatsapp"></i>
+</a>
+<button id="backToTop" aria-label="Sayfa başına dön" title="Sayfa başına dön">↑</button>
 </body>
+<footer>
+  &copy; 2024 Orman Ürünleri. Tüm hakları saklıdır.
+  <div class="social" aria-label="Sosyal medya bağlantıları">
+    <a href="#" aria-label="Facebook" title="Facebook" target="_blank" rel="noopener noreferrer">📘</a>
+    <a href="#" aria-label="Twitter" title="Twitter" target="_blank" rel="noopener noreferrer">🐦</a>
+    <a href="#" aria-label="Instagram" title="Instagram" target="_blank" rel="noopener noreferrer">📸</a>
+  </div>
+</footer>
 </html>
 
 

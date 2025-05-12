@@ -18,37 +18,55 @@
       
           </div>
           <ul>
-            <li><a href="../HTML/index.html">Anasayfa</a></li>
-            <li><a href="../HTML/ürünler.html">Ürünler</a></li>
-            <li><a href="../HTML/Hakkımızda.html">Hakkımızda</a></li>
-            <li><a href="../HTML/Fabrikamız.html">Fabrikamız</a></li>
-            <li><a href="../HTML/ISPM15.html">ISP 15</a></li>
-            <li><a href="../HTML/iletişim.html">İletişim</a></li>
-          </ul>
+      <li><a href="../HTML/index.html">Anasayfa</a></li>
+      <li class="dropdown">
+        <a href="../HTML/ürünler.html">Ürünlerimiz</a>
+        <ul class="dropdown-menu">
+          <li><a href="../HTML/kereste.html">Kereste</a></li>
+          <li><a href="../HTML/palet.html">Palet</a></li>
+          <li><a href="../HTML/kavakcipsi.html">Kavak Cipsi</a></li>
+          <li><a href="../HTML/tomruk.html">Tomruk</a></li>
+        </ul>
+      </li>
+      <li><a href="../HTML/Hakkımızda.html">Hakkımızda</a></li>
+
+      <li class="dropdown">
+        <a href="../HTML/Fabrikamız.html">Fabrikamız</a>
+        <ul class="dropdown-menu">
+          <li><a href="../HTML/Galeri.html">Galeri</a></li>
+          <li><a href="../HTML/Serifikalarımız.html">Sertifikalarımız</a></li>
+        </ul>
+      </li>
+
+      <li><a href="../HTML/ISPM15.html">ISPM-15</a></li>
+      <li><a href="../HTML/iletişim.html">İletişim</a></li>
+    </ul>
         </nav>
       </header>
-      <section class="grid-container">
+     <section class="grid-container">
+  <div class="grid-container" id="products">
+    
+    <a href="../HTML/kereste.html" class="item">
+      <img src="../IMAGES/Kereste.avif" alt="Kereste">
+      <strong>Kereste</strong>
+    </a>
 
-        <div class="grid-container"id="products">
-       <button class="item" onclick="navigate('https://example.com/lareks_lambiri')">
-                <img src="../IMAGES/Kereste.avif" alt="LAREKS LAMBİRİ">
-                <p>Kereste</p>
-            </button>
-            <button class="item" onclick="navigate('https://example.com/lareks_lambiri')">
-                <img src="../IMAGES/palet.webp" alt="LAREKS LAMBİRİ">
-                <p>Palet</p>
-            </button>
+    <a href="../HTML/palet.html" class="item">
+      <img src="../IMAGES/yapay zeka iç palet.png" alt="Palet">
+      <strong>Palet</strong>
+    </a>
 
-            <button class="item" onclick="navigate('https://example.com/lareks_lambiri')">
-                <img src="../IMAGES/kavak cips.jpg" alt="LAREKS LAMBİRİ">
-                <p>Kavak Cipsi</p>
-            </button>
-            
-            <button class="item" onclick="navigate('https://example.com/lareks_lambiri')">
-                <img src="../IMAGES/tomruk-3.jpg" alt="LAREKS LAMBİRİ">
-                <p>Tomruk</p>
-            </button>
-        </div>    
-    </section>
+    <a href="../HTML/kavakcipsi.html" class="item">
+      <img src="../IMAGES/yapay zeka kavak cipsi.png" alt="Kavak Cipsi">
+      <strong>Kavak Cipsi</strong>
+    </a>
+
+    <a href="../HTML/tomruk.html" class="item">
+      <img src="../IMAGES/tomruk-3.jpg" alt="Tomruk">
+      <strong>Tomruk</strong>
+    </a>
+
+  </div>
+</section>
 </body>
 </html>
