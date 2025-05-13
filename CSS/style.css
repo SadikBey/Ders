@@ -66,33 +66,46 @@ body {
 
  /*-------------- Tablonun sağ tarafa yerleştirilmesi --------------- */
  .table-container {
-  float: right; /* Sağ tarafa yerleştirmek için */
-  width: 200px; /* Genişliği ayarlayın */
-  margin: 10px; /* Kenar boşluğu ekleyin */
+  float: right; /* Masaüstünde sağa yasla */
+  width: 200px;
+  margin: 10px;
+  
 }
+
 table {
-  width: 100%; /* Tablonun genişliğini %100 yapın */
-  border-collapse: collapse; /* Kenarları birleştirin */
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed; /*  Hücrelerin taşmasını engelle, sabit düzen */
+  word-wrap: break-word; /*  Uzun içerikleri satıra sığdır */
 }
+
 td {
-  padding: 8px; /* Hücre içi boşluk */
-  border: 2px solid #ccc; /* Kenar rengi */
+  padding: 4px 8px; /* Daha az iç boşluk */
+  border: 2px solid #ccc;
+  line-height: 1.2; 
+  vertical-align: middle; /* Dikey hizalama */
 }
- /* Responsive adjustments */
- @media (max-width: 600px) {
+
+/* Mobil uyum */
+@media (max-width: 600px) {
   .table-container {
-      float: none; /* Mobilde tabloyu alt alta yerleştir */
-      width: 100%; /* Tablonun genişliğini %100 yapın */
-      margin: 0 auto; /* Ortala */
+    float: none;
+    width: 100%;
+    margin: 0 auto;
+    overflow-x: auto; /* Mobilde de kaydırılabilir olsun */
   }
+
   table {
-      font-size: 0.9rem; /* Font boyutunu küçült */
-      min-width: initial; /* Minimum genişliği kaldır */
+    font-size: 0.9rem;
+    min-width: unset; /*  'initial' yerine 'unset' daha net bir sıfırlama */
+    table-layout: auto; /* Mobilde gerekirse otomatik düzenle */
   }
+
   tbody td:first-child {
-      width: auto; /* İlk sütun genişliğini otomatik yap */
+    width: auto;
   }
 }
+
 
 header {
   background: var(--green-dark);
@@ -396,29 +409,57 @@ form button:hover {
 
 /*-----------Footer Bölümü------------*/
 
-footer {
-  background: var(--text-color);
-  color: white;
-  text-align: center;
-  padding: 15px 10px;
-  margin-top: 40px;
-  user-select: none;
-  position: relative;
-}
-footer .social {
-  margin-top: 10px;
-}
-footer .social a {
-  color: white;
-  margin: 0 10px;
-  text-decoration: none;
-  font-size: 1.4rem;
-  transition: color 0.3s;
-}
-footer .social a:hover, footer .social a:focus {
-  color: var(--green-light);
-  outline: none;
-}
+.footer {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      padding: 40px 20px;
+      background-color: #000;
+    }
+
+    .footer-logo img {
+      width: 120px;
+      height: 60px;
+    }
+
+    .footer-logo h2 {
+      margin: 10px 0 0;
+      font-size: 24px;
+    }
+
+    .footer-menu ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-menu ul li {
+      margin: 10px 0;
+    }
+
+    .footer-menu a {
+      text-decoration: none;
+      color: white;
+      transition: color 0.3s;
+    }
+
+    .footer-menu a:hover {
+      color: #f5c518;
+    }
+
+    .footer-contact {
+      max-width: 300px;
+    }
+
+    .footer-contact p {
+      margin: 10px 0;
+      display: flex;
+      align-items: center;
+    }
+
+    .footer-contact i {
+      color: #f44336;
+      margin-right: 10px;
+    }
 /*------ Back to top  and WhatsApp button----------- */
 .WhatsApp
 {
@@ -582,7 +623,7 @@ footer .social a:hover, footer .social a:focus {
       border-radius: 10px;
     }
 
-    /* Mobil uyumluluk */
+    /*---------- Mobil uyumluluk ----------*/
     @media (max-width: 768px) {
       .text-content, .image-content {
         flex: 1 1 100%;
@@ -597,7 +638,20 @@ footer .social a:hover, footer .social a:focus {
         width: 100%;
         text-align: center;
       }
-    }
+
+      .footer {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+      .footer-logo,
+      .footer-menu,
+      .footer-contact {
+    flex: none;
+    width: 100%;
+    max-width: 400px;
+  }
+}
     /* Kavak Palet */
     .ana {
       background-color: #78a9c3;
