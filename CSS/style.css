@@ -274,8 +274,6 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
-  overflow: hidden;
   background-color:  #B2AC88;
 }
 
@@ -557,6 +555,10 @@ form button:hover {
   .menu-toggle {
     display: flex;
   }
+  
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /* Ürünler kısmının özellikleri kereste,palet,cips ve tomruk */
@@ -652,7 +654,7 @@ form button:hover {
     max-width: 400px;
   }
 }
-    /* Kavak Palet */
+    /*--- Kavak Palet ----*/
     .ana {
       background-color: #78a9c3;
       padding: 40px 20px;
