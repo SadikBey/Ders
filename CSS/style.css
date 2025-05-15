@@ -64,48 +64,6 @@ body {
 }
 
 
- /*-------------- Tablonun sağ tarafa yerleştirilmesi --------------- */
- .table-container {
-  float: right; /* Masaüstünde sağa yasla */
-  width: 200px;
-  margin: 10px;
-  
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  table-layout: fixed; /*  Hücrelerin taşmasını engelle, sabit düzen */
-  word-wrap: break-word; /*  Uzun içerikleri satıra sığdır */
-}
-
-td {
-  padding: 4px 8px; /* Daha az iç boşluk */
-  border: 2px solid #ccc;
-  line-height: 1.2; 
-  vertical-align: middle; /* Dikey hizalama */
-}
-
-/* Mobil uyum */
-@media (max-width: 600px) {
-  .table-container {
-    float: none;
-    width: 100%;
-    margin: 0 auto;
-    overflow-x: auto; /* Mobilde de kaydırılabilir olsun */
-  }
-
-  table {
-    font-size: 0.9rem;
-    min-width: unset; /*  'initial' yerine 'unset' daha net bir sıfırlama */
-    table-layout: auto; /* Mobilde gerekirse otomatik düzenle */
-  }
-
-  tbody td:first-child {
-    width: auto;
-  }
-}
-
 
 header {
   background: var(--green-dark);
