@@ -40,31 +40,9 @@ backToTopBtn.addEventListener('keydown', e => {
 });
   /*-------------------İLTİŞİM FORMU JS -------------------------*/
 
-const form = document.getElementById('contactForm');
-form.addEventListener('submit', function(e) {
+document.getElementById("contactForm").addEventListener("submit", function(e) {
   e.preventDefault();
-
-  if (!form.checkValidity()) {
-    alert('Lütfen tüm alanları doğru şekilde doldurun.');
-    return;
-  }
-
-  const name = form.name.value.trim();
-  const email = form.email.value.trim();
-  const message = form.message.value.trim();
-
-  if(name.length < 2) {
-    alert('İsim en az 2 karakter olmalıdır.');
-    form.name.focus();
-    return;
-  }
-  if(message.length < 10) {
-    alert('Mesaj en az 10 karakter olmalıdır.');
-    form.message.focus();
-    return;
-  }
-  alert("Mesajınız başarıyla gönderildi! Teşekkür ederiz.");
-  this.reset();
+  alert("Mesajınız başarıyla gönderildi. Teşekkür ederiz!");
 });
 
 
