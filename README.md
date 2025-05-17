@@ -6,5 +6,5 @@ Sadık ÇETİN, Bu siteyi yaparken ki amacım kereste fabrikasının sunduğu ü
 
 İçerikler;
 Ana Sayfa,Ürünler,Hakkımızda,Foto Galeri,ISPM-15,İletişim
-![Ekran Görüntüsü](../OZCETINLER/IMAGES/yapay%20zeka%20özçetinler.png)
+
                                                                                                      
