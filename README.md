@@ -1,4 +1,4 @@
-# ÖZ ÇETİNLER KERESTE
+# ÖZÇETİNLER KERESTE
 
 Sadık ÇETİN, Bu siteyi yaparken ki amacım kereste fabrikasının sunduğu ürünler hakkında bilgi ve satış verme
 
