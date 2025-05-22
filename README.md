@@ -36,4 +36,3 @@ ISPM-15
 -
 ![Ekran görüntüsü 2025-05-19 194223](https://github.com/user-attachments/assets/501cf1f0-903f-4015-a480-88c2cfde674e)
 
->>>>>>> 7a8742200b4240076fb99357363395b4891834ef
